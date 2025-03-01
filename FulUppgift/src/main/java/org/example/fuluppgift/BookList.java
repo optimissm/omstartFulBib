@@ -20,14 +20,20 @@ public class BookList extends HttpServlet {
 
         PrintWriter out = resp.getWriter();
         out.println("<html><body>");
+        out.println("<div class='m-5'>");
+        out.println("<link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH\" crossorigin=\"anonymous\">\n" +
+                "    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz\" crossorigin=\"anonymous\"></script>\n");
         out.println("<h1>Book List</h1>");
         out.println("<ul>");
+
         for(int i = 0; i < BookDAO.bok.length; i++) {
             Books book = BookDAO.bok[i];
-            out.println("<li><a href=\"viewBooks?bookId" + book.getId() +
+            out.println("<li><a href=\"viewBook?bookId=" + book.getId() +
                     "\">" + book.getTitle() + "</a></li>");
         }
+
         out.println("</ul>");
+        out.println("</div>");
         out.println("</body></html>");
 
     }

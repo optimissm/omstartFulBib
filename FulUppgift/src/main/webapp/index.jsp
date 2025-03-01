@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div class="options">
+    <div class="m-5">
         <h1><%= "Välkommen till Fulköpings bibliotek!" %></h1>
         <br>
         <p>
@@ -23,7 +23,7 @@
         </p>
         <br>
     </div>
-    <div class="library">
+    <div class="m-5">
         <h2><%= "Våra böcker: " %></h2>
         <p>
             <a href="booklist">Lista på våra böcker</a>
