@@ -15,7 +15,7 @@
         <p>
             Jag vill:
             <ul>
-                Logga in <br>
+        <a href="/login"> Logga in </a>  <br>
                 Registrera mig som ny användare <br>
                 Eller utforska biblioteket
             </ul>
