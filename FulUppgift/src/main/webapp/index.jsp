@@ -15,13 +15,11 @@
         <p>
             Jag vill:
             <ul>
-        <a href="/login"> Logga in </a>  <br>
-                Registrera mig som ny användare <br>
-                Eller utforska biblioteket
+                <a href="/login"> Logga in </a>  <br>
+                <a href="/register"> Registrera mig</a> som ny användare <br>
+                Eller fortsätta utforska biblioteket.
             </ul>
-
         </p>
-        <br>
     </div>
     <div class="m-5">
         <h2><%= "Våra böcker: " %></h2>
