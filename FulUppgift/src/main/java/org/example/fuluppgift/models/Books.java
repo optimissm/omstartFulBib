@@ -1,12 +1,29 @@
 package org.example.fuluppgift.models;
 
+
+import jakarta.persistence.*;
+
+@Entity
+@Table(name="AppBooks")
 public class Books {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="id")
     private int id;
+
+    @Column(name="title")
     private String title;
+
+    @Column(name="author")
     private String author;
+
+    @Column(name="genre")
     private String genre;
-    // kanske en sånhär
+
+    @Column(name="available")
     private boolean available;
+
 
     public Books() {}
 
